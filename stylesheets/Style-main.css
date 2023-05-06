@@ -1,0 +1,28 @@
+body {
+    margin: 0px;
+}
+
+main {
+    background: url("../Files/Background/Backgound-main.png");
+    background-size: cover;
+    position: relative;
+}
+
+
+.smoke {
+    width: 100vw;
+    height: 100vh;
+    background: url("../Files/Background/smoke-main2.gif");
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.monsters {
+    background-color: black;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    position: relative;
+    z-index: 2;
+}
