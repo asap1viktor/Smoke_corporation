@@ -1,28 +1,59 @@
 body {
-    margin: 0px;
+    margin: 0;
 }
 
 main {
     background: url("../Files/Background/Backgound-main.png");
     background-size: cover;
-    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display:grid;
 }
 
+section {
+    display:grid;
+    justify-content: center;
+    align-content: space-evenly;
+    grid-template-rows: repeat(2, 1fr 9fr);
+}
 
 .smoke {
     width: 100vw;
     height: 100vh;
-    background: url("../Files/Background/smoke-main2.gif");
+    background: url("../Files/Background/smoke-main.gif");
     background-size: cover;
-    position: relative;
-    z-index: 1;
+    position: absolute;
+    z-index: 2;
+    display: none;
 }
 
 .monsters {
-    background-color: black;
-    width: 80vw;
-    height: 80vh;
+    display:grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70vw;
+    height: 60vh;
     display: grid;
-    position: relative;
-    z-index: 2;
+}
+
+.monsters__salli {
+    background: url("../Files/Image/Salli.png");
+    background-size: cover;
+    background-position:center;
+    border: 1px solid;
+}
+
+.monsters__center {
+    background: url("../Files/Icons/Logo.png");
+    background-size: cover;
+    background-position:center;
+    border: 1px solid;
+}
+
+.monsters__mike {
+    background: url("../Files/Image/Mike.png");
+    background-size: cover;
+    background-position:center;
+    box-shadow;
+    border: 1px solid;
 }
